@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ছবি তুলি</title>
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Fontawesome -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Modak" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+      <!-- jQuery Plugins css -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="plugins/Owl_carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/Owl_carousel/assets/owl.theme.default.css">
+    <link href="plugins/animatedheadline/css/style.css" rel="stylesheet">
+    <link href="plugins/fancybox/fancybox.min.css" rel="stylesheet">
+    <link href="plugins/select_2/css/select2.min.css" rel="stylesheet">
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+  <!-- banner and menu part start -->
+  <section class="banner inner" style="background-image: url(images/reg_bg.jpg)">
+      <!-- nav bar start -->
+      <nav class="navbar navbar-expand-lg navbar-light custom_nav">
+          <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img src="images/logo.png" alt="">
+              </a>
+              <button class="navbar-toggler" id="toogle_button" type="button" data-toggle="collapse" data-target="#my_nav" aria-controls="my_nav" aria-expanded="false" aria-label="Toggle navigation">
+                  <img src="images/cancel.png" class="d-none" id="cancel" alt="">
+                  <img src="images/menu.png" id="menu" alt="">
+              </button>
+              <div class="collapse navbar-collapse" id="my_nav">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Photographer</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <!-- nav bar end -->
+
+      <!-- banner text start -->
+      <div class="container">
+          <div class="banner_content text-center">
+            <h2>Photographer Registration</h2>
+          </div>
+      </div>
+      <!-- banner text end -->
+  </section>
+  <!-- banner and menu part end -->
+
+  <!-- registration form part start -->
+  <section class="registration">
+    <div class="container">
+        <form action="">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-md-8">
+                    <h2 class="step_title">Fill up your working details</h2>
+                    <div class="form">
+                        <div class="form-group">
+                            <label for="">Budget Range</label>
+                            <div class="row">
+                                <div class="col-5">
+                                    <input type="text" class="form-control" placeholder="Starting amount">
+                                </div>
+                                <div class="col-2 text-center">
+                                    <span class="to">To</span>
+                                </div>
+                                <div class="col-5">
+                                    <input type="text" class="form-control" placeholder="Ending amount">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Working Hour Range</label>
+                            <div class="row">
+                                <div class="col-5">
+                                    <input type="text" class="form-control" placeholder="Starting hour">
+                                </div>
+                                <div class="col-2 text-center">
+                                    <span class="to">To</span>
+                                </div>
+                                <div class="col-5">
+                                    <input type="text" class="form-control" placeholder="Ending hour">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Working Location</label>
+                            <select class="js-example-basic-multiple form-control" name="states[]" multiple="multiple">
+                                <option value="A">Alabama</option>
+                                <option value="L">Bangladesh</option>
+                                <option value="bL">India</option>
+                                <option value="lL">Pakistan</option>
+                                <option value="kL">Bhotan</option>
+                                <option value="yL">Nepal</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Gadgets</label>
+                            <select class="js-example-basic-multiple form-control" name="states[]" multiple="multiple">
+                                <option value="A">Alabama</option>
+                                <option value="L">Bangladesh</option>
+                                <option value="bL">India</option>
+                                <option value="lL">Pakistan</option>
+                                <option value="kL">Bhotan</option>
+                                <option value="yL">Nepal</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+                        <div class="form-group text-center pt-4 mb-0">
+                            <button type="submit" class="form_button">Next <i class="fas ml-3 fa-long-arrow-alt-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+  </section>
+  <!-- registration form part end -->
+
+  <!-- footer contact part start -->
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-5">
+                  <div class="footer_about">
+                      <img src="images/logo.png" alt="">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa facere ipsam minima, nobis obcaecati omnis quaerat tempora ut voluptates. Accusamus ad hic nulla odio quisquam. Dolorum fuga laborum recusandae?</p>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="useful_link">
+                      <h2>Important Links</h2>
+                      <ul>
+                          <li><a href="">About Us</a></li>
+                          <li><a href="">Our Gallery</a></li>
+                          <li><a href="">Visit Our Blog</a></li>
+                          <li><a href="">Contact Us</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="contact">
+                      <h2>Contact Info</h2>
+                        <p>Office: Shabagh, University of Dhaka</p>
+                        <p>Phone: 01770496249, 01630297940</p>
+                        <p>E-mail: chobituli@gmail.com</p>
+                        <a href=""><i class="fab ml-0 fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-facebook-messenger"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- footer contact part end -->
+
+  <!-- copyright text part start -->
+  <div class="copyright">
+      <p>&copy; 2019 All right reserved by Chobituli.com</p>
+  </div>
+  <!-- copyright text part end -->
+
+   <!-- jQuery Library -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Slider -->
+    <script src="plugins/Owl_carousel/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+    <!-- Select 2 -->
+    <script src="plugins/select_2/js/select2.full.min.js"></script>
+
+    <!-- Animated headline -->
+    <script src="plugins/animatedheadline/js/main.js"></script>
+
+    <!-- Fancybox headline -->
+    <script src="plugins/fancybox/fancybox.min.js"></script>
+
+    <!-- Mains Custom js -->
+    <script src="js/custom.js"></script>
+
+  <script>
+      $(document).ready(function() {
+          $('.js-example-basic-multiple').select2();
+      });
+  </script>
+  </body>
+</html>

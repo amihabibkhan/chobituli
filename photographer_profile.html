@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ছবি তুলি</title>
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Fontawesome -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Modak" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+      <!-- jQuery Plugins css -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="plugins/Owl_carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/Owl_carousel/assets/owl.theme.default.css">
+    <link href="plugins/animatedheadline/css/style.css" rel="stylesheet">
+    <link href="plugins/fancybox/fancybox.min.css" rel="stylesheet">
+    <link href="plugins/select_2/css/select2.min.css" rel="stylesheet">
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hire.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+  <!-- banner and menu part start -->
+  <section class="banner inner" style="background-image: url(images/profile_bg.jpg)">
+      <!-- nav bar start -->
+      <nav class="navbar navbar-expand-lg navbar-light custom_nav">
+          <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img src="images/logo.png" alt="">
+              </a>
+              <button class="navbar-toggler" id="toogle_button" type="button" data-toggle="collapse" data-target="#my_nav" aria-controls="my_nav" aria-expanded="false" aria-label="Toggle navigation">
+                  <img src="images/cancel.png" class="d-none" id="cancel" alt="">
+                  <img src="images/menu.png" id="menu" alt="">
+              </button>
+              <div class="collapse navbar-collapse" id="my_nav">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Photographer</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <!-- nav bar end -->
+
+      <!-- banner text start -->
+      <div class="container">
+          <div class="banner_content text-center">
+            <h2>Ruhul Amin (Habib) <br><small>Joined at 24 Feb 2017</small></h2>
+              <a href="" class="edit_profile">Edit Profile <i class="fas fa-cog ml-3"></i></a>
+          </div>
+      </div>
+      <!-- banner text end -->
+  </section>
+  <!-- banner and menu part end -->
+
+  <!-- hire part start -->
+  <section class="hire">
+      <div class="container">
+          <!-- information part start -->
+          <div class="row justify-content-center">
+              <div class="col-md-4 ">
+                  <div class="client_details single_photographer text-center">
+                      <div class="client_image">
+                          <span class="top_left"></span>
+                          <span class="top_right"></span>
+                          <img src="images/team/client.png" alt="">
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-8">
+                  <div class="profile_details">
+                      <h2>ID : Expert #23487</h2>
+                      <p>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                      </p>
+                      <table class="table no-border-table">
+                          <tr>
+                              <td><p>Total Reviews</p></td>
+                              <td><p>197</p></td>
+                          </tr>
+                          <tr>
+                              <td><p>From</p></td>
+                              <td><p>Gazipur</p></td>
+                          </tr>
+                          <tr>
+                              <td><p>Budget Range</p></td>
+                              <td><p>4,000 - 10,000 TK</p></td>
+                          </tr>
+                          <tr>
+                              <td><p>Working Time</p></td>
+                              <td><p>2- 12 Hours</p></td>
+                          </tr>
+                          <tr>
+                              <td><p>Completion Rate</p></td>
+                              <td><p>93%</p></td>
+                          </tr>
+                          <tr>
+                              <td><p>Working Area</p></td>
+                              <td><p>Over Bagladesh</p></td>
+                          </tr>
+                      </table>
+                  </div>
+              </div>
+          </div>
+
+          <!-- calender part start -->
+          <div class="py-5 row justify-content-center">
+              <div class="col-md-8">
+                  <div class="section_title text-center">
+                      <h2>Your Schedule <br><small style="font-size: 18px; border-bottom: 1px solid">Selected days define your OFF DAY</small></h2>
+                  </div>
+                  <div class="calender">
+                      <div class="days_of_weak">
+                          <span>Sun</span>
+                          <span style="color: #fff">Mon</span>
+                          <span>Tue</span>
+                          <span style="color: #fff">Wed</span>
+                          <span>Thu</span>
+                          <span style="color: #fff">Fri</span>
+                          <span>Sat</span>
+                      </div>
+                      <div id="days">
+
+                      </div>
+
+                      <script>
+                          // inputed or given info
+                          var off_day_list = [4,7,12,18,22,25];
+                          var first_day_of_month = "April 1, 2019"; // formate = "May 1, 2019"
+                          var year = 2019;
+                          var month = 4;
+
+                          // output string making start
+                          var make_html = '<div class="days">';
+
+                          // calculate total number of days of given mont
+                          var total_days = new Date(year, month, 0).getDate();
+                          console.log(total_days);
+                          // creating date object of given month
+                          var date_obj = new Date(first_day_of_month);
+
+                          // first day of month
+                          var space_before = date_obj.getDay();
+
+                          // day count for looping count and module by 7
+                          var day_count = 1;
+
+                          // calculate how many blank span need in last row
+                          var extra_days = 7-((total_days+space_before)%7);
+
+                          for (i = -(space_before - 1); i <= total_days; i++){
+                              // blank spans in first row
+                              if (i < 1){
+                                  make_html += "<span></span>";
+                                  day_count ++;
+                                  continue;
+                              }
+                              // check this day off or not
+                              var check_off_day = false;
+                              for (x in off_day_list){
+                                  if (off_day_list[x]==i){
+                                     check_off_day = true;
+                                  }
+                              }
+
+                              // main dates
+                              if (check_off_day && day_count % 7 == 0){
+                                  make_html += "<span class='off_day'>" + i + "</span></div><div class='days'>";
+                              }else if(day_count % 7 == 0) {
+                                  make_html += "<span>" + i + "</span></div><div class='days'>";
+                              }else if(check_off_day){
+                                  make_html += "<span class='off_day'>" + i + "</span>";
+                              }else{
+                                  make_html += "<span>" + i + "</span>";
+                              }
+
+                              // blank space in last row
+                              if (i == total_days && extra_days != 7){
+                                for (j = 1; j <= extra_days; j++){
+                                    make_html += "<span></span>";
+                                }
+                              }
+                              day_count++;
+                          }
+                          make_html += '</div>';
+                          document.getElementById('days').innerHTML = make_html;
+                      </script>
+
+                  </div>
+              </div>
+          </div>
+          <!-- portfolio part start -->
+          <div class="row expert_portfolio">
+              <div class="col-12">
+                  <div class="section_title text-center">
+                      <h2>Your Works</h2>
+                  </div>
+              </div>
+          </div>
+          <div class="portfolio_images">
+              <div class="row">
+                  <div class="col-md-6 col-lg-4">
+                      <div class="add_image">
+                          <a data-fancybox="gallery" href="images/portfolio/shot_details.jpg">
+                              <img src="images/add.png" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                      <div class="single_column">
+                          <div class="short">
+                              <span>
+                                  <div class="links">
+                                      <a data-fancybox="gallery" href="images/portfolio/short_details_2.jpg"><i class="fas fa-eye"></i></a>
+                                      <a href=""><i class="fas fa-edit"></i></a>
+                                      <a href=""><i class="fas fa-trash"></i></a>
+                                  </div>
+                              </span>
+                              <img src="images/portfolio/short_details_2.jpg" alt="">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                      <div class="single_column">
+                          <div class="short">
+                              <a data-fancybox="gallery" href="images/portfolio/short_details_2.jpg">
+                                  <span></span>
+                                  <img src="images/portfolio/short_thumb_2.jpg" alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                      <div class="single_column">
+                          <div class="short">
+                              <a data-fancybox="gallery" href="images/portfolio/short_details_5.jpg">
+                                  <span></span>
+                                  <img src="images/portfolio/short_thumb_5.jpg" alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                      <div class="single_column">
+                          <div class="short">
+                              <a data-fancybox="gallery" href="images/portfolio/short_details_3.jpg">
+                                  <span></span>
+                                  <img src="images/portfolio/short_thumb_3.jpg" alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                      <div class="single_column">
+                          <div class="short">
+                              <a data-fancybox="gallery" href="images/portfolio/short_details_2.jpg">
+                                  <span></span>
+                                  <img src="images/portfolio/short_details_2.jpg" alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                      <div class="single_column">
+                          <div class="short">
+                              <a data-fancybox="gallery" href="images/portfolio/shot_details.jpg">
+                                  <span></span>
+                                  <img src="images/portfolio/short_thumb.jpg" alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                      <div class="single_column">
+                          <div class="short">
+                              <a data-fancybox="gallery" href="images/portfolio/short_details_2.jpg">
+                                  <span></span>
+                                  <img src="images/portfolio/short_thumb_2.jpg" alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                      <div class="single_column">
+                          <div class="short">
+                              <a data-fancybox="gallery" href="images/portfolio/short_details_5.jpg">
+                                  <span></span>
+                                  <img src="images/portfolio/short_thumb_5.jpg" alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- award part start -->
+          <div class="row pt-5 justify-content-center">
+              <div class="col-12">
+                  <div class="section_title text-center">
+                      <h2>Your Awards</h2>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                  <div class="single_award">
+                      <a data-fancybox="gallery" href="images/portfolio/short_details_2.jpg">
+                          <img src="images/portfolio/short_details_2.jpg" alt="">
+                      </a>
+                      <p>Bosig Award - 2018</p>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                  <div class="single_award">
+                      <a data-fancybox="gallery" href="images/portfolio/short_details_2.jpg">
+                          <img src="images/portfolio/short_details_2.jpg" alt="">
+                      </a>
+                      <p>Bosig Award - 2018</p>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                  <div class="single_award">
+                      <a data-fancybox="gallery" href="images/portfolio/short_details_2.jpg">
+                          <img src="images/portfolio/short_details_2.jpg" alt="">
+                      </a>
+                      <p>Bosig Award - 2018</p>
+                  </div>
+              </div>
+          </div>
+          <!-- gadgets part start -->
+          <div class="row pt-3 justify-content-center">
+              <div class="col-12">
+                  <div class="section_title text-center">
+                      <h2>Your Gadgets</h2>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                  <div class="single_award">
+                      <a data-fancybox="gallery" href="images/portfolio/short_details_2.jpg">
+                          <img src="images/portfolio/short_details_2.jpg" alt="">
+                      </a>
+                      <p>Trypod</p>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                  <div class="single_award">
+                      <a data-fancybox="gallery" href="images/portfolio/short_details_2.jpg">
+                          <img src="images/portfolio/short_details_2.jpg" alt="">
+                      </a>
+                      <p>Charging Flash</p>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                  <div class="single_award">
+                      <a data-fancybox="gallery" href="images/portfolio/short_details_2.jpg">
+                          <img src="images/portfolio/short_details_2.jpg" alt="">
+                      </a>
+                      <p>Bosig Award - 2018</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- hire part end -->
+
+
+
+  <!-- footer contact part start -->
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-5">
+                  <div class="footer_about">
+                      <img src="images/logo.png" alt="">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa facere ipsam minima, nobis obcaecati omnis quaerat tempora ut voluptates. Accusamus ad hic nulla odio quisquam. Dolorum fuga laborum recusandae?</p>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="useful_link">
+                      <h2>Important Links</h2>
+                      <ul>
+                          <li><a href="">About Us</a></li>
+                          <li><a href="">Our Gallery</a></li>
+                          <li><a href="">Visit Our Blog</a></li>
+                          <li><a href="">Contact Us</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="contact">
+                      <h2>Contact Info</h2>
+                        <p>Office: Shabagh, University of Dhaka</p>
+                        <p>Phone: 01770496249, 01630297940</p>
+                        <p>E-mail: chobituli@gmail.com</p>
+                        <a href=""><i class="fab ml-0 fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-facebook-messenger"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- footer contact part end -->
+
+  <!-- copyright text part start -->
+  <div class="copyright">
+      <p>&copy; 2019 All right reserved by Chobituli.com</p>
+  </div>
+  <!-- copyright text part end -->
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <!-- jQuery Library -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Slider -->
+    <script src="plugins/Owl_carousel/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+    <!-- Animated headline -->
+    <script src="plugins/animatedheadline/js/main.js"></script>
+
+
+    <!-- Select 2 -->
+    <script src="plugins/select_2/js/select2.full.min.js"></script>
+
+    <!-- Fancybox headline -->
+    <script src="plugins/fancybox/fancybox.min.js"></script>
+
+    <!-- Mains Custom js -->
+    <script src="js/custom.js"></script>
+  <script>
+      $(document).ready(function() {
+          $('.js-example-basic-multiple').select2();
+      });
+  </script>
+  </body>
+</html>

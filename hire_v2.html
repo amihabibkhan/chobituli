@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ছবি তুলি</title>
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Fontawesome -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Modak" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+      <!-- jQuery Plugins css -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="plugins/Owl_carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/Owl_carousel/assets/owl.theme.default.css">
+    <link href="plugins/animatedheadline/css/style.css" rel="stylesheet">
+    <link href="plugins/fancybox/fancybox.min.css" rel="stylesheet">
+    <link href="plugins/select_2/css/select2.min.css" rel="stylesheet">
+    <link href="plugins/rangeSlider/jquery.nstSlider.min.css" rel="stylesheet">
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hire.css">
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+  <!-- banner and menu part start -->
+  <section class="banner inner" style="background-image: url(images/hire_bg.jpg)">
+      <!-- nav bar start -->
+      <nav class="navbar navbar-expand-lg navbar-light custom_nav">
+          <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img src="images/logo.png" alt="">
+              </a>
+              <button class="navbar-toggler" id="toogle_button" type="button" data-toggle="collapse" data-target="#my_nav" aria-controls="my_nav" aria-expanded="false" aria-label="Toggle navigation">
+                  <img src="images/cancel.png" class="d-none" id="cancel" alt="">
+                  <img src="images/menu.png" id="menu" alt="">
+              </button>
+              <div class="collapse navbar-collapse" id="my_nav">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Photographer</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <!-- nav bar end -->
+
+      <!-- banner text start -->
+      <div class="container">
+          <div class="banner_content text-center">
+            <h2>Hire a Photographer</h2>
+              <a href="" class="edit_profile" data-toggle="modal" data-target="#search">Search by your requirement<i class="fas fa-search ml-3"></i></a>
+              <!-- Modal -->
+              <div class="modal fade text-left" id="search" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Search photographers for your event</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              <div class="form-group">
+                                  <label for=""><i class="far mr-3 fa-calendar"></i>Event Date</label>
+                                  <input type="date" class="form-control">
+                              </div>
+                              <div class="form-group">
+                                  <label for=""><i class="far mr-3 fa-calendar"></i>Event Location</label>
+                                  <select name="" class="form-control">
+                                      <option value="">Select your event location</option>
+                                  </select>
+                              </div>
+                              <div class="form-group">
+                                  <label for="">Budget Range</label>
+                                  <div class="nstSlider" data-range_min="2000" data-range_max="10000" data-cur_min="2000" data-cur_max="5000">
+                                      <div class="bar"></div>
+                                      <div class="leftGrip"></div>
+                                      <div class="rightGrip"></div>
+                                  </div>
+                                  <div class="row budget_input">
+                                      <div class="col-6">
+                                          <input type="text" class="form-control" id="leftLabel">
+                                      </div>
+                                      <div class="col-6">
+                                          <input type="text" class="form-control" id="rightLabel">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label for="">Working time of photographer</label>
+                                  <div class="nstSlider" data-range_min="2000" data-range_max="10000" data-cur_min="2000" data-cur_max="5000">
+                                      <div class="bar"></div>
+                                      <div class="leftGrip"></div>
+                                      <div class="rightGrip"></div>
+                                  </div>
+                                  <div class="row budget_input">
+                                      <div class="col-6">
+                                          <input type="text" class="form-control" id="leftLabel">
+                                      </div>
+                                      <div class="col-6">
+                                          <input type="text" class="form-control" id="rightLabel">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="modal-footer justify-content-center ">
+                              <button class="search_button">Search <i class="fas fa-search"></i></button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- banner text end -->
+  </section>
+  <!-- banner and menu part end -->
+
+
+  <!-- hire part start -->
+  <section class="hire">
+      <div class="container">
+          <!-- photographers list-->
+          <div class="photographer_list">
+              <div class="freelancer_short_profile">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-3 col-md-3">
+                          <div class="freelancer_image">
+                              <img src="images/team/client.jpg" alt="">
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-md-5">
+                          <div class="freelancer_details">
+                              <h2><a href="">Expert #4324</a></h2>
+                              <div class="ratings">
+                                  <span>4.5</span>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                              </div>
+                              <p>286 Total Review</p>
+                              <p>From - Gazipur</p>
+                              <p>Min Budget - 4000/-</p>
+                              <p>93% Completion Rate</p>
+                              <a href="" class="cart_button"><i class="fas fa-shopping-cart"></i></a>
+                              <a href="" class="cart_button">Place Order</a>
+                          </div>
+                      </div>
+                      <div class="col-lg-5 col-md-4">
+                          <div class="work_sample">
+                              <a data-fancybox="gallery" href="images/portfolio/short_details_5.jpg">
+                                  <img src="images/portfolio/short_thumb_5.jpg"alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="freelancer_short_profile">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-3 col-md-3">
+                          <div class="freelancer_image">
+                              <img src="images/team/client.jpg" alt="">
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-md-5">
+                          <div class="freelancer_details">
+                              <h2><a href="">Expert #4324</a></h2>
+                              <div class="ratings">
+                                  <span>4.5</span>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                              </div>
+                              <p>286 Total Review</p>
+                              <p>From - Gazipur</p>
+                              <p>Min Budget - 4000/-</p>
+                              <p>93% Completion Rate</p>
+                              <a href="" class="cart_button"><i class="fas fa-shopping-cart"></i></a>
+                              <a href="" class="cart_button">Place Order</a>
+                          </div>
+                      </div>
+                      <div class="col-lg-5 col-md-4">
+                          <div class="work_sample">
+                              <a data-fancybox="gallery" href="images/portfolio/short_details_5.jpg">
+                                  <img src="images/portfolio/short_thumb_5.jpg"alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="freelancer_short_profile">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-3 col-md-3">
+                          <div class="freelancer_image">
+                              <img src="images/team/client.jpg" alt="">
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-md-5">
+                          <div class="freelancer_details">
+                              <h2><a href="">Expert #4324</a></h2>
+                              <div class="ratings">
+                                  <span>4.5</span>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                              </div>
+                              <p>286 Total Review</p>
+                              <p>From - Gazipur</p>
+                              <p>Min Budget - 4000/-</p>
+                              <p>93% Completion Rate</p>
+                              <a href="" class="cart_button"><i class="fas fa-shopping-cart"></i></a>
+                              <a href="" class="cart_button">Place Order</a>
+                          </div>
+                      </div>
+                      <div class="col-lg-5 col-md-4">
+                          <div class="work_sample">
+                              <a data-fancybox="gallery" href="images/portfolio/short_details_5.jpg">
+                                  <img src="images/portfolio/short_thumb_5.jpg"alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="freelancer_short_profile">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-3 col-md-3">
+                          <div class="freelancer_image">
+                              <img src="images/team/client.jpg" alt="">
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-md-5">
+                          <div class="freelancer_details">
+                              <h2><a href="">Expert #4324</a></h2>
+                              <div class="ratings">
+                                  <span>4.5</span>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                              </div>
+                              <p>286 Total Review</p>
+                              <p>From - Gazipur</p>
+                              <p>Min Budget - 4000/-</p>
+                              <p>93% Completion Rate</p>
+                              <a href="" class="cart_button"><i class="fas fa-shopping-cart"></i></a>
+                              <a href="" class="cart_button">Place Order</a>
+                          </div>
+                      </div>
+                      <div class="col-lg-5 col-md-4">
+                          <div class="work_sample">
+                              <a data-fancybox="gallery" href="images/portfolio/short_details_5.jpg">
+                                  <img src="images/portfolio/short_thumb_5.jpg"alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="freelancer_short_profile">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-3 col-md-3">
+                          <div class="freelancer_image">
+                              <img src="images/team/client.jpg" alt="">
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-md-5">
+                          <div class="freelancer_details">
+                              <h2><a href="">Expert #4324</a></h2>
+                              <div class="ratings">
+                                  <span>4.5</span>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                              </div>
+                              <p>286 Total Review</p>
+                              <p>From - Gazipur</p>
+                              <p>Min Budget - 4000/-</p>
+                              <p>93% Completion Rate</p>
+                              <a href="" class="cart_button"><i class="fas fa-shopping-cart"></i></a>
+                              <a href="" class="cart_button">Place Order</a>
+                          </div>
+                      </div>
+                      <div class="col-lg-5 col-md-4">
+                          <div class="work_sample">
+                              <a data-fancybox="gallery" href="images/portfolio/short_details_5.jpg">
+                                  <img src="images/portfolio/short_thumb_5.jpg"alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="freelancer_short_profile">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-3 col-md-3">
+                          <div class="freelancer_image">
+                              <img src="images/team/client.jpg" alt="">
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-md-5">
+                          <div class="freelancer_details">
+                              <h2><a href="">Expert #4324</a></h2>
+                              <div class="ratings">
+                                  <span>4.5</span>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                              </div>
+                              <p>286 Total Review</p>
+                              <p>From - Gazipur</p>
+                              <p>Min Budget - 4000/-</p>
+                              <p>93% Completion Rate</p>
+                              <a href="" class="cart_button"><i class="fas fa-shopping-cart"></i></a>
+                              <a href="" class="cart_button">Place Order</a>
+                          </div>
+                      </div>
+                      <div class="col-lg-5 col-md-4">
+                          <div class="work_sample">
+                              <a data-fancybox="gallery" href="images/portfolio/short_details_5.jpg">
+                                  <img src="images/portfolio/short_thumb_5.jpg"alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="freelancer_short_profile">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-3 col-md-3">
+                          <div class="freelancer_image">
+                              <img src="images/team/client.jpg" alt="">
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-md-5">
+                          <div class="freelancer_details">
+                              <h2><a href="">Expert #4324</a></h2>
+                              <div class="ratings">
+                                  <span>4.5</span>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                              </div>
+                              <p>286 Total Review</p>
+                              <p>From - Gazipur</p>
+                              <p>Min Budget - 4000/-</p>
+                              <p>93% Completion Rate</p>
+                              <a href="" class="cart_button"><i class="fas fa-shopping-cart"></i></a>
+                              <a href="" class="cart_button">Place Order</a>
+                          </div>
+                      </div>
+                      <div class="col-lg-5 col-md-4">
+                          <div class="work_sample">
+                              <a data-fancybox="gallery" href="images/portfolio/short_details_5.jpg">
+                                  <img src="images/portfolio/short_thumb_5.jpg"alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="freelancer_short_profile">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-3 col-md-3">
+                          <div class="freelancer_image">
+                              <img src="images/team/client.jpg" alt="">
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-md-5">
+                          <div class="freelancer_details">
+                              <h2><a href="">Expert #4324</a></h2>
+                              <div class="ratings">
+                                  <span>4.5</span>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                              </div>
+                              <p>286 Total Review</p>
+                              <p>From - Gazipur</p>
+                              <p>Min Budget - 4000/-</p>
+                              <p>93% Completion Rate</p>
+                              <a href="" class="cart_button"><i class="fas fa-shopping-cart"></i></a>
+                              <a href="" class="cart_button">Place Order</a>
+                          </div>
+                      </div>
+                      <div class="col-lg-5 col-md-4">
+                          <div class="work_sample">
+                              <a data-fancybox="gallery" href="images/portfolio/short_details_5.jpg">
+                                  <img src="images/portfolio/short_thumb_5.jpg"alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="freelancer_short_profile">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-3 col-md-3">
+                          <div class="freelancer_image">
+                              <img src="images/team/client.jpg" alt="">
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-md-5">
+                          <div class="freelancer_details">
+                              <h2><a href="">Expert #4324</a></h2>
+                              <div class="ratings">
+                                  <span>4.5</span>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                              </div>
+                              <p>286 Total Review</p>
+                              <p>From - Gazipur</p>
+                              <p>Min Budget - 4000/-</p>
+                              <p>93% Completion Rate</p>
+                              <a href="" class="cart_button"><i class="fas fa-shopping-cart"></i></a>
+                              <a href="" class="cart_button">Place Order</a>
+                          </div>
+                      </div>
+                      <div class="col-lg-5 col-md-4">
+                          <div class="work_sample">
+                              <a data-fancybox="gallery" href="images/portfolio/short_details_5.jpg">
+                                  <img src="images/portfolio/short_thumb_5.jpg"alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- hire part end -->
+
+
+
+  <!-- footer contact part start -->
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-5">
+                  <div class="footer_about">
+                      <img src="images/logo.png" alt="">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa facere ipsam minima, nobis obcaecati omnis quaerat tempora ut voluptates. Accusamus ad hic nulla odio quisquam. Dolorum fuga laborum recusandae?</p>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="useful_link">
+                      <h2>Important Links</h2>
+                      <ul>
+                          <li><a href="">About Us</a></li>
+                          <li><a href="">Our Gallery</a></li>
+                          <li><a href="">Visit Our Blog</a></li>
+                          <li><a href="">Contact Us</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="contact">
+                      <h2>Contact Info</h2>
+                        <p>Office: Shabagh, University of Dhaka</p>
+                        <p>Phone: 01770496249, 01630297940</p>
+                        <p>E-mail: chobituli@gmail.com</p>
+                        <a href=""><i class="fab ml-0 fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-facebook-messenger"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- footer contact part end -->
+
+  <!-- copyright text part start -->
+  <div class="copyright">
+      <p>&copy; 2019 All right reserved by Chobituli.com</p>
+  </div>
+  <!-- copyright text part end -->
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <!-- jQuery Library -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Slider -->
+    <script src="plugins/Owl_carousel/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+    <!-- Animated headline -->
+    <script src="plugins/animatedheadline/js/main.js"></script>
+
+    <!-- Select 2 -->
+    <script src="plugins/select_2/js/select2.full.min.js"></script>
+
+    <!-- Range slider -->
+    <script src="plugins/rangeSlider/jquery.nstSlider.min.js"></script>
+
+    <!-- Fancybox headline -->
+    <script src="plugins/fancybox/fancybox.min.js"></script>
+
+    <!-- Mains Custom js -->
+    <script src="js/custom.js"></script>
+  <script>
+      $(document).ready(function() {
+          //select 2
+          $('.js-example-basic-multiple').select2();
+
+          // price range slider
+          $('.nstSlider').nstSlider({
+              "left_grip_selector": ".leftGrip",
+              "right_grip_selector": ".rightGrip",
+              "value_bar_selector": ".bar",
+              "value_changed_callback": function(cause, leftValue, rightValue) {
+                  $(this).parent().find('#leftLabel').val(leftValue);
+                  $(this).parent().find('#rightLabel').val(rightValue);
+              },
+              "user_mouseup_callback" :function(vmin, vmax, left_grip_moved) {
+                  // here will goes to ajax request
+              }
+          });
+
+          $('#leftLabel').enter(function () {
+              alert()
+          });
+      });
+  </script>
+  </body>
+</html>
